@@ -1,0 +1,360 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    font-family: sans-serif;
+    background-color: rgb(0, 0, 75);
+    color: white;
+    overflow-x: hidden;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 5px solid white;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 10px;
+    height: auto;
+    text-align: left;
+}
+.header-left {
+    width: 100%;
+    width: 140px;
+    display: block;
+    align-items: center;
+}
+.header-left span {
+    display: block;
+    margin: 0;
+    font-size: 32px;
+    font-weight: bolder;
+}
+.header-right {
+    background-color: white;
+    height: auto;
+    width: 100%;
+    max-width: 100px;
+    border-radius: 15px;
+    color: black;
+    align-items: center;
+    text-align: center;
+    padding: 25px 0px;
+}
+.header-right span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight:bolder ;
+    letter-spacing: 0px;
+    height: auto;
+}
+.MainBody {
+    display: block;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    height: auto;
+    margin-top: 20%;
+    max-height: 600px;
+}
+.signs {
+    background-image: url(images/bg-triangle.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:100%;
+    background-size: 440px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content:center;
+    height: auto;
+    max-height: 600px;
+}
+.MainBody img {
+    width: 100%;
+    max-width: 400px;
+}
+.signs img {
+    background-color: white;
+    width: 100%;
+    max-width: 60px;
+    height: 60px;
+    padding: 40px;
+    border-radius: 100%;
+}
+#paperBtn{
+    border: 2vw solid rgb(0, 0, 185);
+    cursor: pointer;
+    position: relative;
+    bottom: 160px;
+}
+#scissorsBtn {
+    border: 2vw solid rgb(201, 201, 1);
+    cursor: pointer;
+    position: relative;
+    bottom: 160px;
+}
+#rockBtn{
+    border: 2vw solid rgb(175, 0, 0);
+    cursor: pointer;
+    position: relative;
+    top: 180px;
+}
+.ToggleGame {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    text-transform: uppercase;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+}
+#PaperImg{
+    display: none;
+}
+#RockImg{
+    display: none;
+}
+#ScissorsImg{
+    display: none;
+}
+.ToggleGame-container {
+    display: none;
+    align-items: center;
+}
+.Answers {
+    display: none;
+}
+.ToggleGame-container img{
+    text-align: center;
+    margin: auto;
+    display: flex;
+    border: 2vw solid rgb(0, 0, 185);
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    padding: 40px;
+    border-radius: 100%;
+}
+#PaperImg {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    border: 2vw solid rgb(0, 0, 185);
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    padding: 40px;
+    border-radius: 100%;
+}
+#RockImg {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    border: 2vw solid rgb(175, 0, 0);
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    padding: 40px;
+    border-radius: 100%;
+}
+#ScissorsImg {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    border: 10% solid rgb(201, 201, 1);
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    padding: 40px;
+    border-radius: 100%;
+}
+#PaperImgBot {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    border: 2vw solid rgb(0, 0, 185);
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    padding: 40px;
+    border-radius: 100%;
+}
+#RockImgBot{
+    text-align: center;
+    margin: auto;
+    display: flex;
+    border: 2vw solid rgb(175, 0, 0);
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    padding: 40px;
+    border-radius: 100%;
+}
+#ScissorsImgBot{
+    text-align: center;
+    margin: auto;
+    display: flex;
+    border: 10% solid rgb(201, 201, 1);
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    padding: 40px;
+    border-radius: 100%;
+}
+#rulesBtn{
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    width: 100%;
+    max-width: 160px;
+    font-size: 18px;
+    border-radius: 10px;
+    height: 40px;
+    cursor: pointer;
+}
+#PlayAgain{
+    width: 100%;
+    padding: 10px 25px;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+    border: 5px solid black;
+    cursor: pointer;
+}
+@media (max-width:840px){
+    .MainBody {
+        margin-top: 420px;
+    }
+}
+@media (max-width:540px){
+    .header {
+        width: 100%;
+        max-width: 500px;
+    }
+    .header-left span {
+        font-size: 2rem;
+    }
+    .MainBody{
+        margin-top: 320px;
+    }
+    .MainBody {
+        flex-wrap: wrap;
+    }
+    .ToggleGame-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+    }
+}
+@media (max-width:412px){
+    .MainBody{
+        margin-top: 120px;
+    }
+    .ToggleGame-container{
+        margin-top: 0px;
+    }
+}
+@media (max-width:480px){
+    body {
+        width: 100%;
+        height: auto;
+    }
+    .header {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        max-width: 300px;
+    }
+    .header-left span{
+        font-size: 22px;
+    }
+    .header-right span{
+        font-size: 14px;
+        margin: 0;
+    }
+    .MainBody{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0;
+        height: auto;
+        background-position: center;
+        background-size:50%;
+    }
+    .MainBody img{
+        width: 100%;
+        max-width:30px;
+        height: 30px;
+    }
+    .toggle-right img {
+        width: 100%;
+        max-width:120px;
+        height: 120px;
+    }
+    .ToggleGame-container {
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 900px;
+    }
+    .ToggleGame-container img{
+        width: 100%;
+        max-width:120px;
+        height: 120px;  
+    }
+    #PlayAgain{
+        width: 220px;
+        height: 80px;
+        font-size: 26px;
+    }
+    .ToggleGame {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .Answers {
+        font-size: 32px;
+    }
+    .toggle-main h3{
+        font-size: 42px;
+    }
+    .signs {
+        background-image: url(images/bg-triangle.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:100%;
+        background-size: 440px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content:center;
+        height: 500px;
+        margin: 0;
+        padding: 0;
+    }
+    .ToggleGame {
+        display: flex;
+        flex-direction: column;
+    }
+    .Answers {
+        font-size: 20px;
+    }
+}

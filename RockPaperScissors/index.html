@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon-32x32.png">
+</head>
+<body>
+    <nav class="header">
+        <div class="header-left">
+            <span>Rock</span>
+            <span>Paper</span>
+            <span>Scissors</span>
+        </div>
+        <div class="header-right">
+            <span>score</span>
+            <span id="score-output">-</span>
+        </div>
+    </nav>
+    <nav class="MainBody">
+        <div class="choose">
+        <div class="signs">
+            <div class="paper"><img src="images/icon-paper.svg" id="paperBtn"></div>
+            <div class="rock"><img src="images/icon-rock.svg" id="rockBtn"></div>
+            <div class="scissors"><img src="images/icon-scissors.svg" id="scissorsBtn"></div>
+        </div>
+        </div>
+        <div class="ToggleGame-container">
+        <div class="ToggleGame">
+            <div class="toggle-left">
+                <h1>you picked</h1>
+                <img src="images/icon-paper.svg" id="PaperImg">
+                <img src="images/icon-rock.svg" id="RockImg">
+                <img src="images/icon-scissors.svg" id="ScissorsImg">
+            </div>
+            <div class="toggle-main">
+                <h3 id="Winner"></h3>
+                <button type="button" id="PlayAgain">Play Again</button>
+            </div>
+            <div class="toggle-right">
+                <h1>The house picked</h1>
+                <img src="images/icon-paper.svg" id="PaperImgBot">
+                <img src="images/icon-rock.svg" id="RockImgBot">
+                <img src="images/icon-scissors.svg" id="ScissorsImgBot">
+            </div>
+        </div>
+        <nav class="Answers">
+            <h1 id="yourChoice">Your Choice is:</h1>
+            <h2 id="ComputerChoice">Computer Choice is:</h2>
+        </nav>
+    </div>
+    </nav>
+    <script src="script.js"></script>
+</body>
+</html>
